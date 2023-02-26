@@ -1,17 +1,17 @@
 ---
-title: Nouvelles
+title: Musique
 date: 2020-08-05
 description: The Posts List display is controled in /src/_data/structure.js and ships with 4 options.
 layout: page
 eleventyNavigation:
   key: main
-  title: Nouvelles #  as it will appear in the nav
+  title: Musique #  as it will appear in the nav
   order: 3    # order to display in the nav
 seo:
-  title: Nouvelles
-  description: 
+  title: Musique
+  description:
 pagination:
-  data: collections.post 
+  data: collections.post
   size: 12
   reverse: true
   alias: posts
@@ -20,8 +20,8 @@ pagination:
 <h2 class="mt-6">Les coulisses de la carrière musicale</h2>
 
 <p>
-  Ne manquez pas les dernières actualités de Danny, y compris les dates de spectacle, 
-  les festivals de musique, les collaborations et les nouvelles sorties d'albums. 
+  Ne manquez pas les dernières actualités de Danny, y compris les dates de spectacle,
+  les festivals de musique, les collaborations et les nouvelles sorties d'albums.
   Restez connecté avec cette page pour ne rien manquer des événements à venir.
 </p>
 
@@ -29,7 +29,7 @@ pagination:
 
 {% set postslist = posts | reverse %}
 
-{# 
+{#
   Allows a user to easily change the Tag List Style.
   Please see instructions in /src/_data/structure.js >>> ===== Post List Style Options =====
 #}

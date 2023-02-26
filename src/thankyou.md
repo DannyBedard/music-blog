@@ -1,9 +1,9 @@
 ---
-title: Thank you for getting in touch
+title: Merci
 date: 2020-08-05
 layout: page
 ---
 
-We appreciate you contacting us!
+Merci de nous avoir contacté!
 
-We will reply as soon as possible.
+Nous vous répondrons sous peu!
