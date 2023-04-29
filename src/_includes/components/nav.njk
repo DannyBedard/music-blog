@@ -1,4 +1,8 @@
 {% set navPages = collections.pages | eleventyNavigation %}
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+</style>
 <nav x-data="{ open: false }" class="{{ colors.navCustom.barBg or colors.navDefault.barBg }} shadow relative">
   <div class="px-8 md:px-16 lg:px-32">
     <div class="flex justify-between h-16">
@@ -6,12 +10,13 @@
         <div class="flex items-center">
           {# small logo hidden on md and above #}
           <a aria-label="Mobile Logo" href="/" class="block md:hidden {{ colors.logoCustom.mobile or colors.logoDefault.mobile }} hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}" alt="Mobile Logo">
-            <h1>DB</h1>
+            <h1 style="font-family: 'Montserrat', cursive;">DB</h1>
             {# {% svg "logo-mobile", "fill-current w-16 hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}", "The Mobile Logo" %} #}
           </a>
           {# large logo hidden on small, block on md #}
           <a aria-label="Desktop Logo" href="/" class="hidden md:block {{ colors.logoCustom.desktop or colors.logoDefault.desktop }} hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}" alt="Desktop Logo">
-            <h1>DANNY BÉDARD</h1>
+            {# <h1>DANNY BÉDARD</h1> #}
+            <h1 style="font-family: 'Montserrat', cursive;">DANNY BEDARD</h1>
             {# {% svg "logo", "fill-current h-8 hover:{{ colors.logoCustom.hover or colors.logoDefault.hover }}", "The Logo" %} #}
           </a>
         </div>
