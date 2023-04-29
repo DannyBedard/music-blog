@@ -29,8 +29,8 @@ heroSettings:
   headingTextCase: # default = as typed - options: uppercase, lowercase, capitalize
   subheadingText: Plongez dans l'univers musical de ce musicien passionné
   subheadingTextColor: # Leave empty to inherit headingTextColor or default (text-white) or use any text-[color]-[xxx]
-  buttonText: Contact # no button generated if left blank
-  buttonURL: /contact/ # full url required. Example: https://thisdomain.com/somepage/
+  buttonText: Musique # no button generated if left blank
+  buttonURL: /blog/ # full url required. Example: https://thisdomain.com/somepage/
   buttonTextColor: # leave blank to inherit from /src/_data/colors.buttonCustom or buttonDefault
   buttonBgColor: # leave blank to inherit from /src/_data/colors.buttonCustom.bg or buttonDefault.bg
   buttonBgHover: # leave blank to inherit from /src/_data/colors.buttonCustom.bgHover or buttonDefault.bgHover
