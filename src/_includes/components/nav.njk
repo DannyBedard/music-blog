@@ -30,7 +30,7 @@
       {# MOBILE MENU  #}
       <div class="flex items-center -mr-2 sm:hidden">
         {# Mobile menu button #}
-        <button @click="open = !open" class="inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} transition duration-150 ease-in-out rounded-md hover:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} hover:{{ colors.navCustom.mobileButtonBgover or colors.navDefault.mobileButtonBgHover }} focus:outline-none focus:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} focus:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }}" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" aria-label="Main menu" x-bind:aria-expanded="open">
+        <button onclick="openMenu()" @click="open = !open" class="inline-flex items-center justify-center p-2 {{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} transition duration-150 ease-in-out rounded-md hover:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} hover:{{ colors.navCustom.mobileButtonBgover or colors.navDefault.mobileButtonBgHover }} focus:outline-none focus:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }} focus:{{ colors.navCustom.mobileButton or colors.navDefault.mobileButton }}" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" aria-label="Main menu" x-bind:aria-expanded="open">
           {# Icon when menu is closed.  #}
           <svg x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'hidden': open, 'block': !open }" class="block w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -44,7 +44,7 @@
     </div>
   </div>
 
-  <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
+  <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden" id="menu">
     <div class="pt-2 pb-3">
       {# 11ty Nav Plugin loop  #}
       {% for entry in navPages %}
@@ -57,3 +57,18 @@
 
   </div>
 </nav>
+
+<script>
+  let isOpen = false;
+  let menu = document.getElementById("menu");
+
+  function openMenu() {
+    isOpen = !isOpen;
+
+    if(isOpen) {
+      menu.style.display = "block"
+    } else {
+      menu.style.display = "none"
+    }
+  }
+</script>
