@@ -1,7 +1,7 @@
 ---
-title: Honky tonk woman - Fever House
-date: 2021-03-08T00:00:00.000Z
-excerpt: Fever house lors du spectacle virtuel bénéfice TRR offre une prestation de Honky tonk woman
+title: Fever House
+date: 2022-05-13T00:00:00.000Z
+excerpt: Fever house, band de blues rock
 author: Fever House
 draft:
 seo:
@@ -15,6 +15,10 @@ images: # relative to /src/assets/images/
   height: h-64 md:h-1/3 # optional. Default = h-48 md:h-1/3
 tags:
 ---
+
+{% youtube "461G_PTVbDc", "Blues suede shoes - Fever House" %}
+
+Une partie de la prestation live chez René avec Fever house
 
 {% youtube "ljn_tu6WDi8", "Honky tonk woman - Fever House" %}
 

@@ -1,7 +1,7 @@
 ---
 title: Jesther Brothers
 date: 2023-04-24T00:00:00.000Z
-excerpt: Duo sur Tiktok
+excerpt: Duo de musique varié
 author: Jesther Brothers
 draft:
 seo:
@@ -16,8 +16,10 @@ images: # relative to /src/assets/images/
 tags:
 ---
 
-{% youtube "yAhHFfS3prg", "JestherBrothers" %}
+{% youtube "zSI-oIBhREQ", "JestherBrothers" %}
 
-Danny et Vincent font des duos de plusieurs genres musicaux sur Tiktok, rejoignable ici:
+Jester Brother est le duo de Danny et Vincent qui font des duos dans plusieurs genres musicaux sur les réseaux sociaux, rejoignable ici:
 
 https://www.tiktok.com/@jesterbrothers
+
+Ils se produisent également en spectacle.
